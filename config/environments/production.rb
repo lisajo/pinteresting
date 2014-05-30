@@ -79,7 +79,7 @@ Pinteresting::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 #note to set this to host
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-end
+
 
 
 # sets paperclip to upload pics to amazon s3
@@ -91,3 +91,4 @@ end
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
+  end
